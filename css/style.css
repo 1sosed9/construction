@@ -75,7 +75,7 @@ text-p-reviews {
 
 .header {
   min-height: 740px;
-  background-image: url(../img/first-screen-bg.jpg);
+  background-image: url(/img/first-screen-bg.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -313,6 +313,7 @@ text-p-reviews {
 
 .services {
   padding-top: 151px;
+  margin-bottom: 116px;
 }
 
 .services-h2 {
@@ -359,6 +360,67 @@ text-p-reviews {
   text-align: center;
   letter-spacing: 0.02em;
   text-transform: uppercase;
+}
+
+.portfolio {
+  min-height: 814px;
+  background-image: url(/img/portfolio.jpg);
+}
+
+.question {
+  padding-top: 150px;
+  padding-bottom: 150px;
+}
+
+.question .services-h2 {
+  margin-bottom: 50px;
+}
+
+.question_items {
+}
+.question_item {
+  padding-left: 9px;
+}
+
+.question_h3 {
+  text-transform: uppercase;
+  color: var(--accent-color);
+  margin-bottom: 21px;
+}
+
+.question_p {
+  margin-bottom: 40px;
+  color: var(--gray-color);
+  max-width: 730px;
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.question_h3.close {
+  margin-bottom: 33px;
+}
+
+.question_h3.open::before,
+.question_h3.close::before {
+  content: "";
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  margin-right: 15px;
+  background-image: url(../img/arrow-icon.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.question_h3.open::before {
+  transform: rotate(270deg);
+}
+
+.question_h3.close + .question_p {
+  display: none;
 }
 
 @media screen and (max-width: 1280px) {
