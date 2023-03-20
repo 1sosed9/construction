@@ -428,6 +428,7 @@ text-p-reviews {
   background-color: var(--dark-color);
   text-align: center;
   min-height: 364px;
+  max-width: 1920px;
 }
 
 .partners-h2 {
