@@ -426,12 +426,12 @@ text-p-reviews {
 .partners {
   padding-top: 100px;
   background-color: var(--dark-color);
-  width: 1920px;
-  height: 364px;
   text-align: center;
+  min-height: 364px;
 }
 
 .partners-h2 {
+  margin-right: -16px;
   margin-bottom: 49px;
   color: var(--white-color);
 }
