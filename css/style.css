@@ -628,3 +628,34 @@ body {
   }
 }
 
+.footer {
+  background-color: var(--dark-color);
+}
+.flex__footer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.container_footer-p {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.footer__p {
+  color: var(--white-color);
+}
+
+@media screen and (max-width: 1280px) {
+  .flex__footer {
+    display: flex;
+    justify-content: space-around;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .flex__footer {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+}
