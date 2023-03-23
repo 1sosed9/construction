@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Figma-project</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Oswald:wght@400;500;700&display=swap"
@@ -19,11 +20,11 @@
         <div class="container">
             <div class="header__title">
                 <img src="./img/logo.svg" alt="logo" class="logo">
-                <button class="burger">
+                <a class="burger sidenav-trigger" data-target="slide-out">
                     <span class="burger__line"></span>
                     <span class="burger__line"></span>
                     <span class="burger__line"></span>
-                </button>
+                </a>
             </div>
             <h1 class="header__h1">Реализуем крупнейшие проекты в Украине</h1>
             <h4 class="header__h4">Стадионы, газопроводы, мосты, дамбы</h4>
@@ -87,6 +88,9 @@
             </div>
         </div>
     </section>
+
+    
+
     <div class="request">
         <div class="container request-container">
             <div class="banners">
@@ -138,42 +142,42 @@
         <div class="container">
             <h2 class="services-h2 text_h2">Ответы на вопросы</h2>
             <div class="question_items">
-                <div class="question_item">
-                    <h3 class="text_h3 question_h3 close">Работаете ли вы по 249 ЗУ?</h3>
+                <details class="question_item">
+                    <summary class="text_h3 question_h3">Работаете ли вы по 249 ЗУ?</summary>
                     <p class="text-p question_p">Lorem Ipsum - это текст-"рыба", часто используемый в печати и
                         вэб-дизайне.
                         Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время
                         некий
                         безымянный печатник создал большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum для
                         распечатки образцов. </p>
-                </div>
-                <div class="question_item">
-                    <h3 class="text_h3 question_h3 open">Работаете ли вы по 249 ЗУ?</h3>
+                </details>
+                <details class="question_item">
+                    <summary class="text_h3 question_h3">Работаете ли вы по 249 ЗУ?</summary>
                     <p class="text-p question_p">Lorem Ipsum - это текст-"рыба", часто используемый в печати и
                         вэб-дизайне.
                         Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время
                         некий
                         безымянный печатник создал большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum для
                         распечатки образцов. </p>
-                </div>
-                <div class="question_item">
-                    <h3 class="text_h3 question_h3 close">Работаете ли вы по 249 ЗУ?</h3>
+                </details>
+                <details class="question_item">
+                    <summary class="text_h3 question_h3">Работаете ли вы по 249 ЗУ?</summary>
                     <p class="text-p question_p">Lorem Ipsum - это текст-"рыба", часто используемый в печати и
                         вэб-дизайне.
                         Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время
                         некий
                         безымянный печатник создал большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum для
                         распечатки образцов. </p>
-                </div>
-                <div class="question_item">
-                    <h3 class="text_h3 question_h3 close">Работаете ли вы по 249 ЗУ?</h3>
+                </details>
+                <details class="question_item">
+                    <summary class="text_h3 question_h3">Работаете ли вы по 249 ЗУ?</summary>
                     <p class="text-p question_p">Lorem Ipsum - это текст-"рыба", часто используемый в печати и
                         вэб-дизайне.
                         Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время
                         некий
                         безымянный печатник создал большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum для
                         распечатки образцов. </p>
-                </div>
+                </details>
             </div>
         </div>
     </section>
@@ -266,7 +270,9 @@
                         <img src="./img/phone.svg" alt="location" class="svg_img"></img>
                     </div>
                     <h3 class="text_h3 name_item">Телефон:</h3>
-                    <h3 class="text_h3 information">8 (812) 111-22-33 <br /> 8 (812) 111-22-33</h3>
+                    <h3 class="text_h3 information"><a href="tel:8 (812) 111-22-33" class="contacts__phone">8 (812)
+                            111-22-33 <br /> 8 (812)
+                            111-22-33</a></h3>
                 </div>
                 <div class="contacts__item">
                     <div class="img_box">
@@ -279,8 +285,9 @@
                     <div class="img_box">
                         <img src="./img/email-icon.svg" alt="location" class="svg_img"></img>
                     </div>
-                    <h3 class="text_h3 name_item">E-mail:</h3>
-                    <h3 class="text_h3 information"><span class="email_style">Info@vip.com</span></h3>
+                    <h3 class="text_h3 name_item"> E-mail:</h3>
+                    <h3 class="text_h3 information"><a href="mailto:Info@vip.com"
+                            class="contacts__email">Info@vip.com</a></h3>
                 </div>
             </div>
         </div>
@@ -298,6 +305,11 @@
             </div>
         </div>
     </footer>
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="./js/main.js"></script>
 </body>
 
 </html>

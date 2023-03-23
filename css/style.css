@@ -386,6 +386,7 @@ body {
   text-transform: uppercase;
   color: var(--accent-color);
   margin-bottom: 21px;
+  cursor: pointer;
 }
 
 .question_p {
@@ -397,30 +398,6 @@ body {
   font-weight: 400;
   font-size: 16px;
   line-height: 22px;
-}
-
-.question_h3.close {
-  margin-bottom: 33px;
-}
-
-.question_h3.open::before,
-.question_h3.close::before {
-  content: "";
-  display: inline-block;
-  width: 15px;
-  height: 15px;
-  margin-right: 15px;
-  background-image: url(../img/arrow-icon.svg);
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-.question_h3.open::before {
-  transform: rotate(270deg);
-}
-
-.question_h3.close + .question_p {
-  display: none;
 }
 
 .partners {
@@ -606,8 +583,14 @@ body {
   text-transform: uppercase;
 }
 
-.email_style {
+.contacts__phone {
+  text-decoration: none;
+  color: #000000;
+}
+
+.contacts__email {
   color: var(--accent-color);
+  text-decoration: none;
 }
 
 @media screen and (max-width: 1280px) {
@@ -618,6 +601,10 @@ body {
   }
   .contacts__item {
     margin-bottom: 40px;
+  }
+  .header__title {
+    padding-right: 50px;
+    padding-left: 50px;
   }
 }
 
